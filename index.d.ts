@@ -2713,10 +2713,17 @@ type EventEmitterListener = (...args: any[]) => void;
 
 /**
  * Node-style callback as used by {@link util.fetch}.
- * @param error Error, if any, otherwise `null`
+ * @param error File path or url
  * @param [contents] File contents, if there hasn't been an error
  */
 type FetchCallback = (error: Error, contents?: string) => void;
+
+/**
+ * Custom fetch function used by {@link util.fetch}.
+ * @param fileName Error, if any, otherwise `null`
+ * @param callback Callback function
+ */
+type CustomFetch = (fileName: string, callback: FetchCallback) => void;
 
 /** Options as used by {@link util.fetch}. */
 export interface IFetchOptions {
@@ -2726,6 +2733,9 @@ export interface IFetchOptions {
 
     /** If `true`, forces the use of XMLHttpRequest */
     xhr?: boolean;
+
+    /** Custom implementation of `fetch` */
+    customFetch: CustomFetch;
 }
 
 /**
