@@ -2735,7 +2735,7 @@ export interface IFetchOptions {
     xhr?: boolean;
 
     /** Custom implementation of `fetch` */
-    customFetch: CustomFetch;
+    customFetch?: CustomFetch;
 }
 
 /**
