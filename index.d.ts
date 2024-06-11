@@ -1073,6 +1073,9 @@ export interface IParseOptions {
 
     /** Use trailing comment when both leading comment and trailing comment exist. */
     preferTrailingComment?: boolean;
+
+    /** Fetch options */
+    fetchOptions?: IFetchOptions;
 }
 
 /** Options modifying the behavior of JSON serialization. */

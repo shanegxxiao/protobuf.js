@@ -43,6 +43,7 @@ var base10Re    = /^[1-9][0-9]*$/,
  * @property {boolean} [keepCase=false] Keeps field casing instead of converting to camel case
  * @property {boolean} [alternateCommentMode=false] Recognize double-slash comments in addition to doc-block comments.
  * @property {boolean} [preferTrailingComment=false] Use trailing comment when both leading comment and trailing comment exist.
+ * @property {IFetchOptions} [fetchOptions] Fetch options
  */
 
 /**

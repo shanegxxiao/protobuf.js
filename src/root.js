@@ -179,7 +179,11 @@ Root.prototype.load = function load(filename, options, callback) {
             process(filename, source);
         } else {
             ++queued;
-            self.fetch(filename, function(err, source) {
+            var fetchOptions;
+            if (options && options.fetchOptions) {
+                fetchOptions = options.fetchOptions;
+            }
+            self.fetch(filename, fetchOptions, function(err, source) {
                 --queued;
                 /* istanbul ignore if */
                 if (!callback)
