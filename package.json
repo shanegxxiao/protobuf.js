@@ -106,6 +106,7 @@
     "dist/**",
     "ext/**",
     "google/**",
-    "src/**"
+    "src/**",
+    "lib/fetch/**"
   ]
 }
