@@ -55,7 +55,7 @@
     "@protobufjs/fetch": "file:./lib/fetch",
     "@protobufjs/float": "^1.0.2",
     "@protobufjs/inquire": "^1.1.0",
-    "@protobufjs/path": "^1.1.2",
+    "@protobufjs/path": "file:./lib/path",
     "@protobufjs/pool": "^1.1.0",
     "@protobufjs/utf8": "^1.1.0",
     "@types/node": ">=13.7.0",
@@ -107,6 +107,7 @@
     "ext/**",
     "google/**",
     "src/**",
-    "lib/fetch/**"
+    "lib/fetch/**",
+    "lib/path/**"
   ]
 }
